@@ -1,0 +1,41 @@
+@import './theme.scss';
+
+page {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  color: #000000;
+  @apply bg-background;
+}
+.dark {
+  color: #ffffff;
+  background: #121212;
+}
+
+.open-btn {
+  @apply absolute inset-0 opacity-0;
+}
+/* 禁用按钮默认样式，因为uno里定义:disabled不起作用 */
+.btn[disabled], .btn.disabled{
+  @apply cursor-default bg-muted opacity-50 border-muted text-muted-foreground border border-solid;
+}
+/*#ifdef MP-TOUTIAO */
+/* 覆盖头条小程序默认样式 */
+/* #endif */
+.gradient-page-top-bg {
+  background: linear-gradient(to bottom, hsl(var(--subtitle)) 0%, hsl(var(--muted)) 100%);
+}
+.gradient-line-left-bg {
+  background: linear-gradient(to right, hsl(var(--background)) 0%, hsl(var(--foreground)) 100%);
+}
+.gradient-line-right-bg {
+  background: linear-gradient(to right, hsl(var(--foreground)) 0%, hsl(var(--background)) 100%);
+}
+/* #ifdef MP-ALIPAY */
+/* 覆盖支付宝小程序默认样式 */
+textarea {
+  @apply p-0;
+}
+/* #endif */
