@@ -1,17 +1,17 @@
 {
   "light": {
     "bgMuted": "#f7f7f7",
-    "bgPrimary": "#0D97FF",
+    "bgPrimary": "#E64747",
     "bgPrimary/5": "#F5FAFF",
     "bgSecondary": "#efefef",
-    "bgSubtitle": "#E2EAFF",
+    "bgSubtitle": "#F2F6F9",
     "bgTxtStyle": "light",
     "navTxtStyle": "black",
     "textForeground": "#333333"
   },
   "dark": {
     "bgMuted": "#292929",
-    "bgPrimary": "#0D97FF",
+    "bgPrimary": "#E64747",
     "bgPrimary/5": "#292929",
     "bgSecondary": "#1f1f1f",
     "bgSubtitle": "#292929",

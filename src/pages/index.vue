@@ -130,16 +130,15 @@ onShareAppMessage((res: Page.ShareAppMessageOption) => {
     <!-- 待补缴费用 -->
     <ToPayModal />
     <div class="relative z-0">
-      <div class="gradient-page-top-bg absolute left-0 right-0 top-0 z--1 h-80 p-2" />
-      <div class="p-3" @click="router.push('order/list')">
+      <div class="absolute left-0 right-0 top-0 z-1 h-10 w-full bg-[#DBBC84]" />
+      <div class="relative top-10 h-10 bg-[#DBBC84]">
+        <img src="/static/index/logo.png" class="ml-4 h-5 w-26" alt="">
+      </div>
+      <div class="h-13.5 pt-10">
         <div class="flex items-center justify-center card px-4 py-2">
-          <!-- <input class="flex-1" type="text" placeholder="输入要查询的单号"> -->
           <div class="flex-1 color-muted-foreground">
             输入要查询的单号
           </div>
-          <button class="h-7 rounded-2 bg-primary px-2 py-1 text-sm text-primary-foreground">
-            查快递
-          </button>
         </div>
       </div>
       <div class="p-3">
@@ -313,6 +312,11 @@ onShareAppMessage((res: Page.ShareAppMessageOption) => {
 }
 </style>
 
-<route lang="yaml">
-layout: tab
+<route lang="json5">
+{
+  layout: 'tab',
+  style: {
+    navigationStyle: 'custom',
+  },
+}
 </route>

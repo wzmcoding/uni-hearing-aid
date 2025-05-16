@@ -3,7 +3,7 @@ import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 export default defineUniPages({
   pages: [],
   globalStyle: {
-    'navigationBarTitleText': '飞驴速运',
+    'navigationBarTitleText': '挚听助听器',
     'navigationBarBackgroundColor': '@bgSubtitle',
     'navigationBarTextStyle': '@navTxtStyle',
     'backgroundColor': '@textForeground',
